@@ -3,12 +3,109 @@
 *,
 *::after {
 	box-sizing: border-box;
-	margin: 0px auto;
+	margin: 0px;
 	padding: 0px;
+
+}
+:root {
+	--col1-border-color: rgb(2, 204, 204)
 }
 
 /*** body styling ***/
 body {
 	min-height: 100vh;
 	border: 10px solid teal;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	min-width: 1000px;
+	overflow-x: auto;
+	
+}
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.name_row {
+	display: flex;
+	justify-content: center;
+	min-width: 960px;
+	overflow: auto;
+}
+.name_box {
+	display: flex;
+	width: 80px;
+	height: 80px;
+	margin: 3px;
+	padding: 3px;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.name_arabic {
+	display: block;
+	flex: 2.5px;
+	text-align: center;
+	margin: 3px;
+	font-size: 16px;
+	font-weight: bold;
+	
+}
+.name_translation {
+	flex: 1px;
+	text-align: center;
+	font-size: 10px;
+	font-weight: small;
+	padding: 3px;
+}
+.name_meaning {
+	flex: 1.5px;
+	text-align: center;
+	margin-bottom: 2px;
+	font-size: 10px;
+	display: flex;
+	
+}
+.name_box:nth-child(1)>.name_arabic {
+	color: var(--col1-border-color);
+}
+
+.name_box:nth-child(1) {
+	border: 3px solid rgb(2, 204, 204);
+	background-color: rgb(236, 255, 255);
+}
+.name_box:nth-child(2) {
+	border: 3px solid rgb(185, 182, 182);
+	background-color: rgb(248, 245, 245);
+}
+.name_box:nth-child(3) {
+	border: 3px solid palevioletred;
+	background-color: rgb(250, 238, 240);
+}
+.name_box:nth-child(4) {
+	border: 3px solid rgb(2, 196, 2);
+	background-color: rgb(210, 255, 210);
+}
+.name_box:nth-child(5) {
+	border: 3px solid rgb(127, 14, 240);
+	background-color: rgb(255, 218, 255);
+}
+.name_box:nth-child(6) {
+	border: 3px solid gray;
+	background-color: rgb(250, 243, 243);
+}
+.name_box:nth-child(7) {
+	border: 3px solid rgb(168, 168, 1);
+	background-color: rgb(255, 255, 212);
+}
+.name_box:nth-child(8) {
+	border: 3px solid rgb(190, 2, 2);
+	background-color: rgb(255, 230, 230);
+}
+.name_box:nth-child(9) {
+	border: 3px solid rgb(247, 197, 73);
+	background-color: rgb(250, 239, 213);
 }
